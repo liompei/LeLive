@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="56dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:id="@+id/rl_tab1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tab_home"/>
+
+            <TextView
+                android:id="@+id/tv_tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_tab1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="首页"
+                android:textColor="@color/main_reset_color"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tab_chat"/>
+
+            <TextView
+                android:id="@+id/tv_tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_tab2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="消息"
+                android:textColor="@color/main_reset_color"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tab_center"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_tab_center"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tab3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_tab3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tab_discover"/>
+
+            <TextView
+                android:id="@+id/tv_tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_tab3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="发现"
+                android:textColor="@color/main_reset_color"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tab4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_tab4"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/tab_me"/>
+
+            <TextView
+                android:id="@+id/tv_tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_tab4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="我"
+                android:textColor="@color/main_reset_color"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

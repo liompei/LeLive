@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_item_touch">
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_default_head_24dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_head"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未设置"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_whats_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:lines="1"
+                        android:maxLength="16"
+                        android:singleLine="true"
+                        android:text="签名: 未设置"
+                        android:textColor="@color/secondary_textColor"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_my_room"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/selector_item_touch"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="我的直播间"/>
+
+            <TextView
+                android:id="@+id/tv_profit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/selector_item_touch"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="收益"/>
+
+            <include layout="@layout/common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_item_touch"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="购买记录"/>
+
+            <include layout="@layout/common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_bind"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_item_touch"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="账号绑定"/>
+
+            <include layout="@layout/common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_item_touch"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="意见反馈"/>
+
+            <include layout="@layout/common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_item_touch"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="设置"/>
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/selector_item_touch"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="检查更新"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
